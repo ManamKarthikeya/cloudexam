@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infosys FA2 Cloud Examination | Objective Test Practice</title>
+  <meta name="description" content="Interactive practice platform for Infosys FA2 Cloud Objective Examination featuring 27 questions, 40 marks, negative marking, randomized order, and in-depth post-submission explanations.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%233b82f6'><path d='M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z'/></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+  <!-- Top Global Header -->
+  <header class="app-header" id="app-header">
+    <div class="header-container">
+      <div class="brand-group">
+        <div class="brand-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1 class="brand-title">Infosys FA2 Cloud Examination</h1>
+          <span class="brand-subtitle">Objective Test · 27 Questions · 40 Marks · −25% Negative Marking</span>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <!-- Live Top-Right Timer (Visible across viewport during exam) -->
+        <div class="header-timer-pill hidden" id="header-top-timer">
+          <svg class="timer-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+          </svg>
+          <span class="timer-tag">TIME:</span>
+          <span class="timer-val" id="header-timer-val">40:00</span>
+        </div>
+
+        <div class="exam-status-pill" id="header-status-pill">
+          <span class="status-dot"></span>
+          <span id="header-status-text">Ready to Start</span>
+        </div>
+
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme" title="Switch Light/Dark Theme">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="main-content" id="main-content">
+    
+    <!-- SCREEN 1: EXAM DASHBOARD -->
+    <section class="screen dashboard-screen" id="dashboard-screen">
+      <div class="dashboard-hero">
+        <div class="hero-badge">Cloud Practice Portal</div>
+        <h2 class="hero-title">Infosys FA2 Cloud Foundation & Architecture Exam</h2>
+        <p class="hero-desc">
+          Test your conceptual mastery across Cloud Deployment Models, Service Models, Virtualization & Containers, Migration 6-Rs, CI/CD, DevSecOps, Edge Computing, and Cloud Security Governance.
+        </p>
+
+        <div class="exam-stats-bar">
+          <div class="stat-card">
+            <span class="stat-number">27</span>
+            <span class="stat-label">Total Questions</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">40</span>
+            <span class="stat-label">Maximum Marks</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">−25%</span>
+            <span class="stat-label">Negative Marking</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">40m</span>
+            <span class="stat-label">Exam Duration</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="dashboard-grid">
+        <!-- Distribution Table -->
+        <div class="card spec-card">
+          <div class="card-header">
+            <div class="card-icon blue">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+            </div>
+            <div>
+              <h3 class="card-title">Marks Distribution & Scheme</h3>
+              <p class="card-subtitle">Exact question allocation matching FA2 objective pattern</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="distribution-table">
+                <thead>
+                  <tr>
+                    <th>Question Type</th>
+                    <th>Count</th>
+                    <th>Marks Each</th>
+                    <th>Total</th>
+                    <th>Negative Mark</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="type-pill pill-a">Section A</span> 1-mark questions</td>
+                    <td>18</td>
+                    <td>+1.0</td>
+                    <td>18</td>
+                    <td><span class="neg-tag">−0.25</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="type-pill pill-b">Section B</span> 2-mark questions</td>
+                    <td>5</td>
+                    <td>+2.0</td>
+                    <td>10</td>
+                    <td><span class="neg-tag">−0.50</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="type-pill pill-c">Section C</span> 3-mark questions</td>
+                    <td>4</td>
+                    <td>+3.0</td>
+                    <td>12</td>
+                    <td><span class="neg-tag">−0.75</span></td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>27</strong></td>
+                    <td>—</td>
+                    <td><strong>40 Marks</strong></td>
+                    <td><strong>−25% on wrong</strong></td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+
+            <div class="formula-box">
+              <span class="formula-title">Official Scoring Formula:</span>
+              <code>Final Score = Marks Earned − Negative Marks Incurred</code>
+              <span class="formula-note">Unanswered questions receive 0 marks. Score is capped at maximum 40 marks.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rules & Interaction Card -->
+        <div class="card rules-card">
+          <div class="card-header">
+            <div class="card-icon purple">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <h3 class="card-title">Examination Interaction Rules</h3>
+              <p class="card-subtitle">Please read instructions carefully before starting</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <ul class="rules-list">
+              <li>
+                <div class="rule-icon proctor-bullet">🛡️</div>
+                <div>
+                  <strong>Strict Full-Screen Proctoring:</strong> The exam will enter <strong>Full-Screen Mode</strong> upon starting. <strong>Switching tabs or opening any other application (Alt+Tab, window blur) will immediately auto-submit your exam.</strong>
+                </div>
+              </li>
+              <li>
+                <div class="rule-icon check-bullet">✓</div>
+                <div>
+                  <strong>Single-Select Questions:</strong> Rendered with radio buttons. Select exactly one answer.
+                </div>
+              </li>
+              <li>
+                <div class="rule-icon check-bullet">✓</div>
+                <div>
+                  <strong>Multiple-Select Questions:</strong> Rendered with checkboxes. Contains exactly 2 options (select one or both).
+                </div>
+              </li>
+              <li>
+                <div class="rule-icon warning-bullet">!</div>
+                <div>
+                  <strong>Strict Multi-Select Grading:</strong> Full marks awarded <em>only</em> when the selected combination matches the correct answer key exactly. A wrong combination attracts full negative penalty (−0.25, −0.50, or −0.75).
+                </div>
+              </li>
+              <li>
+                <div class="rule-icon lock-bullet">🔒</div>
+                <div>
+                  <strong>Integrity Protection:</strong> No answers or hints are revealed during the active test. Full answer keys and detailed explanations are unlocked immediately upon submission.
+                </div>
+              </li>
+              <li>
+                <div class="rule-icon shuffle-bullet">🔀</div>
+                <div>
+                  <strong>Randomization:</strong> Questions and option choices can be dynamically randomized to prevent pattern memorization while preserving correct answer mappings.
+                </div>
+              </li>
+            </ul>
+
+            <!-- Config Controls -->
+            <div class="exam-config-panel">
+              <h4 class="config-title">Test Session Options</h4>
+              <div class="config-items">
+                <label class="config-label">
+                  <input type="checkbox" id="config-randomize">
+                  <span class="config-checkmark"></span>
+                  <span>Randomize Question Sequence (Shuffle Q1–Q27)</span>
+                </label>
+
+                <div class="config-timer-group">
+                  <span class="config-timer-label">Timer Duration:</span>
+                  <select id="config-duration" class="styled-select">
+                    <option value="2400" selected>40 Minutes (Official Exam Duration)</option>
+                    <option value="1800">30 Minutes (Fast Track)</option>
+                    <option value="3600">60 Minutes (Relaxed Practice)</option>
+                    <option value="0">Untimed Practice Mode</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- Start Action -->
+            <div class="start-action-box">
+              <button class="btn btn-primary btn-lg start-btn" id="start-exam-btn">
+                <span>Start Examination Now (Full Screen)</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+              <span class="ready-tip">Keyboard shortcuts available: 1-4 for options, N for Next, P for Previous</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 2: ACTIVE EXAMINATION SCREEN -->
+    <section class="screen exam-screen hidden" id="exam-screen">
+      <!-- Live Exam Top Toolbar with Top-Right Timer -->
+      <div class="exam-toolbar">
+        <div class="toolbar-left">
+          <span class="live-exam-title">FA2 Cloud Objective Exam</span>
+          <span class="toolbar-divider">|</span>
+          <span class="toolbar-section-pill" id="current-section-badge">Section A</span>
+          <div class="toolbar-proctor-badge" id="proctor-indicator">
+            <span class="proctor-pulse"></span>
+            <span>Full-Screen Active · Proctored</span>
+          </div>
+        </div>
+
+        <div class="toolbar-right">
+          <!-- Prominent Top-Right Timer Display -->
+          <div class="timer-display top-right-timer" id="timer-display">
+            <svg class="timer-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+            </svg>
+            <div class="timer-digits-box">
+              <span class="timer-micro-label">TIME REMAINING</span>
+              <span class="timer-text" id="time-left-text">40:00</span>
+            </div>
+          </div>
+
+          <button class="btn btn-danger btn-sm" id="toolbar-submit-btn">Submit Exam</button>
+        </div>
+      </div>
+
+      <!-- Exam Layout: Question Area + Question Palette -->
+      <div class="exam-layout">
+        <!-- Question Column -->
+        <div class="question-column">
+          <div class="card question-card" id="question-card">
+            <!-- Question Card Top Meta -->
+            <div class="question-meta-bar">
+              <div class="question-index-badge" id="question-index-badge">
+                Question 1 of 27
+              </div>
+              <div class="question-badges-group">
+                <span class="badge badge-type" id="question-type-badge">Single-select</span>
+                <span class="badge badge-marks" id="question-marks-badge">+1.0 Mark</span>
+                <span class="badge badge-neg" id="question-neg-badge">−0.25 on wrong</span>
+              </div>
+            </div>
+
+            <!-- Question Body -->
+            <div class="question-content">
+              <h3 class="question-title" id="question-title">Selecting a deployment model</h3>
+              <p class="question-text" id="question-text">
+                A bank needs greater control over sensitive customer records, data location and its cloud environment. Which deployment model is most suitable?
+              </p>
+              
+              <div class="instruction-callout" id="question-instruction">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                <span id="instruction-text">Choose exactly one option below.</span>
+              </div>
+            </div>
+
+            <!-- Options Area -->
+            <div class="options-container" id="options-container" role="group" aria-label="Question Options">
+              <!-- Dynamically populated options -->
+            </div>
+
+            <!-- Question Bottom Actions -->
+            <div class="question-actions-bar">
+              <div class="actions-left">
+                <button class="btn btn-outline" id="mark-review-btn">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <span id="mark-review-text">Mark for Review</span>
+                </button>
+                <button class="btn btn-ghost" id="clear-answer-btn" title="Clear your selected answer for this question">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+                  <span>Clear Choice</span>
+                </button>
+              </div>
+
+              <div class="actions-right">
+                <button class="btn btn-secondary" id="prev-question-btn">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+                  <span>Previous</span>
+                </button>
+                <button class="btn btn-primary" id="next-question-btn">
+                  <span>Save & Next</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar / Navigation Palette Column -->
+        <aside class="palette-column">
+          <div class="card palette-card">
+            <div class="palette-header">
+              <h3 class="palette-title">Question Palette</h3>
+              <span class="palette-count" id="palette-progress">0 of 27 Answered</span>
+            </div>
+
+            <!-- Legend Status Summary -->
+            <div class="palette-legend">
+              <div class="legend-item">
+                <span class="legend-badge answered"></span>
+                <span>Answered (<strong id="legend-answered-count">0</strong>)</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-badge not-answered"></span>
+                <span>Not Answered (<strong id="legend-not-answered-count">1</strong>)</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-badge review"></span>
+                <span>Marked for Review (<strong id="legend-review-count">0</strong>)</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-badge not-visited"></span>
+                <span>Not Visited (<strong id="legend-not-visited-count">26</strong>)</span>
+              </div>
+            </div>
+
+            <!-- Section filter tabs for palette -->
+            <div class="palette-filter-tabs">
+              <button class="palette-tab active" data-section="all">All (27)</button>
+              <button class="palette-tab" data-section="sec-a">Sec A (18)</button>
+              <button class="palette-tab" data-section="sec-b">Sec B (5)</button>
+              <button class="palette-tab" data-section="sec-c">Sec C (4)</button>
+            </div>
+
+            <!-- Question Numbers Grid -->
+            <div class="palette-grid" id="palette-grid">
+              <!-- Dynamically generated 27 buttons -->
+            </div>
+
+            <!-- Quick Jump / Submit inside sidebar -->
+            <div class="palette-footer">
+              <button class="btn btn-danger btn-block submit-exam-btn" id="palette-submit-btn">
+                <span>Submit Final Examination</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SCREEN 3: RESULTS AND COMPREHENSIVE REVIEW -->
+    <section class="screen results-screen hidden" id="results-screen">
+      <!-- Security Violation Alert Banner (Shown if exam terminated by proctor) -->
+      <div class="violation-banner hidden" id="proctor-violation-banner">
+        <div class="violation-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+            <line x1="12" y1="9" x2="12" y2="13"/>
+            <line x1="12" y1="17" x2="12.01" y2="17"/>
+          </svg>
+        </div>
+        <div class="violation-content">
+          <h3 class="violation-title">Proctor Alert: Test Auto-Submitted Due to Security Violation</h3>
+          <p class="violation-desc" id="violation-reason-text">
+            A tab switch, window minimization, or application shift was detected during the active session. To prevent unauthorized activity, the examination was automatically submitted.
+          </p>
+        </div>
+      </div>
+
+      <!-- Result Banner -->
+      <div class="results-hero">
+        <div class="results-hero-left">
+          <div class="result-badge" id="result-status-badge">Test Completed</div>
+          <h2 class="result-heading">Examination Scorecard</h2>
+          <p class="result-subtext" id="result-user-summary">
+            Here is your verified performance evaluation for the Infosys FA2 Cloud Objective Examination.
+          </p>
+          <div class="result-meta-tags">
+            <span class="meta-tag" id="result-date-tag">Date: Today</span>
+            <span class="meta-tag" id="result-time-taken-tag">Time Elapsed: 00:00</span>
+            <span class="meta-tag" id="result-mode-tag">Scoring: Formula Applied</span>
+          </div>
+        </div>
+
+        <div class="results-hero-right">
+          <div class="score-dial-card">
+            <div class="score-circle">
+              <svg class="score-circle-svg" viewBox="0 0 120 120">
+                <circle class="score-circle-bg" cx="60" cy="60" r="52"></circle>
+                <circle class="score-circle-progress" id="score-circle-bar" cx="60" cy="60" r="52"></circle>
+              </svg>
+              <div class="score-dial-content">
+                <span class="score-dial-val" id="score-final-val">0.00</span>
+                <span class="score-dial-max">out of 40</span>
+              </div>
+            </div>
+            <div class="score-pct-badge" id="score-pct-text">0.0% Score</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Key Metrics Row -->
+      <div class="metrics-grid">
+        <div class="metric-card card-earned">
+          <div class="metric-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div class="metric-data">
+            <span class="metric-value" id="metric-marks-earned">+0.00</span>
+            <span class="metric-label">Gross Marks Earned</span>
+          </div>
+        </div>
+
+        <div class="metric-card card-neg">
+          <div class="metric-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </div>
+          <div class="metric-data">
+            <span class="metric-value" id="metric-negative-marks">−0.00</span>
+            <span class="metric-label">Negative Marks (−25%)</span>
+          </div>
+        </div>
+
+        <div class="metric-card card-correct">
+          <div class="metric-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <div class="metric-data">
+            <span class="metric-value" id="metric-correct-count">0</span>
+            <span class="metric-label">Correct Answers</span>
+          </div>
+        </div>
+
+        <div class="metric-card card-wrong">
+          <div class="metric-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+          </div>
+          <div class="metric-data">
+            <span class="metric-value" id="metric-incorrect-count">0</span>
+            <span class="metric-label">Incorrect Answers</span>
+          </div>
+        </div>
+
+        <div class="metric-card card-unanswered">
+          <div class="metric-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <div class="metric-data">
+            <span class="metric-value" id="metric-unanswered-count">0</span>
+            <span class="metric-label">Unanswered (0 penalty)</span>
+          </div>
+        </div>
+
+        <div class="metric-card card-accuracy">
+          <div class="metric-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12A10 10 0 1 1 12 2v10Z"/></svg>
+          </div>
+          <div class="metric-data">
+            <span class="metric-value" id="metric-accuracy-val">0%</span>
+            <span class="metric-label">Accuracy (Attempted)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section Performance Breakdown Card -->
+      <div class="card section-breakdown-card">
+        <div class="card-header">
+          <div class="card-icon blue">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <div>
+            <h3 class="card-title">Section-wise Performance Breakdown</h3>
+            <p class="card-subtitle">Granular evaluation by mark weightage and negative marks</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="breakdown-table">
+              <thead>
+                <tr>
+                  <th>Section</th>
+                  <th>Questions</th>
+                  <th>Max Marks</th>
+                  <th>Correct</th>
+                  <th>Incorrect</th>
+                  <th>Unanswered</th>
+                  <th>Marks Earned</th>
+                  <th>Neg. Deductions</th>
+                  <th>Net Score</th>
+                </tr>
+              </thead>
+              <tbody id="section-breakdown-tbody">
+                <!-- Dynamically populated rows -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Post-Submission Detailed Review Section -->
+      <div class="review-section" id="review-section">
+        <div class="review-section-header">
+          <div class="review-title-group">
+            <h3 class="review-title">Detailed Solutions & Answer Key</h3>
+            <p class="review-subtitle">Review every question with your response, the official key, and concept explanations.</p>
+          </div>
+
+          <div class="review-controls">
+            <!-- Filter Pills -->
+            <div class="filter-pills" id="review-filters">
+              <button class="filter-pill active" data-filter="all">All (27)</button>
+              <button class="filter-pill" data-filter="correct">Correct (<span id="filter-cnt-correct">0</span>)</button>
+              <button class="filter-pill" data-filter="incorrect">Incorrect (<span id="filter-cnt-incorrect">0</span>)</button>
+              <button class="filter-pill" data-filter="unanswered">Unanswered (<span id="filter-cnt-unanswered">0</span>)</button>
+            </div>
+
+            <!-- Action buttons -->
+            <div class="review-actions-group">
+              <button class="btn btn-secondary btn-sm" id="print-result-btn" title="Print or save as PDF">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+                <span>Print Scorecard</span>
+              </button>
+              <button class="btn btn-primary btn-sm" id="retake-exam-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/></svg>
+                <span>Retake Examination</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Question Cards List -->
+        <div class="review-cards-list" id="review-cards-list">
+          <!-- Dynamically populated review cards -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CONFIRM SUBMISSION MODAL -->
+  <div class="modal-backdrop hidden" id="submit-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-icon-badge">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <div>
+          <h3 class="modal-title" id="modal-title">Confirm Final Submission</h3>
+          <p class="modal-subtitle">Review your progress summary before submitting.</p>
+        </div>
+        <button class="modal-close-btn" id="modal-cancel-btn-x" aria-label="Close Modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-stats-grid">
+          <div class="modal-stat-box green">
+            <span class="modal-stat-val" id="modal-answered-count">0</span>
+            <span class="modal-stat-label">Answered</span>
+          </div>
+          <div class="modal-stat-box orange">
+            <span class="modal-stat-val" id="modal-unanswered-count">27</span>
+            <span class="modal-stat-label">Unanswered</span>
+          </div>
+          <div class="modal-stat-box purple">
+            <span class="modal-stat-val" id="modal-review-count">0</span>
+            <span class="modal-stat-label">Marked for Review</span>
+          </div>
+        </div>
+
+        <div class="modal-alert-box" id="modal-unanswered-warning">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          <span id="modal-warning-text">You have unanswered questions. Unanswered questions score 0 marks with no negative penalty.</span>
+        </div>
+
+        <p class="modal-disclaimer">
+          Once submitted, you cannot change your answers. Your final score will be calculated immediately according to the +1/+2/+3 and −25% penalty formula, and the complete answer key with explanations will be revealed.
+        </p>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="modal-back-btn">Return to Test</button>
+        <button class="btn btn-danger" id="modal-confirm-btn">
+          <span>Yes, Submit Examination</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
